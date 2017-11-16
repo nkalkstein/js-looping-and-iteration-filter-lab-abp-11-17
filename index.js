@@ -11,9 +11,8 @@ function fuzzyMatch(list, letter) {
   });
 }
 
-function matchName(drivers, string) {
-  for (const name of drivers) {
-    return name === string;
-  }
+function matchName (list, name) {
+  return list.filter(function (driver) {
+    return driver.name.toLowerCase() === name.toLowerCase();
+  });
 }
-
