@@ -1,5 +1,5 @@
-function findMatching(collection, user) {
-  for (const user of collection) {
+function findMatching(driver, user) {
+  for (const user of driver) {
     reurn [user]
   }
 }
