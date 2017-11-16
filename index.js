@@ -1,5 +1,7 @@
-function findMatching(driver, user) {
-  for (const driver of user) {
-    reurn [user]
-  }
+function findMatching (list, name) {
+  return list.filter(function (driverName) {
+    return driverName.toLowerCase() === name.toLowerCase();
+  });
 }
+
+
