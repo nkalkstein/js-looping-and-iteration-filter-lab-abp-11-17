@@ -10,3 +10,10 @@ function fuzzyMatch(list, letter) {
     return driverName.slice(0, lengthOfName) === letter;
   });
 }
+
+function matchName(drivers, string) {
+  for (const name of drivers) {
+    return name === string;
+  }
+}
+}
